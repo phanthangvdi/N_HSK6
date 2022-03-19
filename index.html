@@ -109,7 +109,7 @@
             x = setInterval(function () {
 
                 var now = new Date().getTime(),
-                    distance = (countDown + 10500000 - now) / 1000;
+                    distance = (countDown + 140 * 60 * 1000 - now) / 1000;
 
                 if (distance > 0) {
                     document.getElementById('hours').innerText = Math.floor((distance % (day)) / (hour)),
